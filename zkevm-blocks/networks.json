@@ -1,0 +1,8 @@
+{
+  "polygon-zkevm": {
+    "ConverterRegistryContract": {
+      "address": "0x81d880bfab1f7f08816d9bd4571e2f5953532287",
+      "startBlock": 0
+    }
+  }
+}

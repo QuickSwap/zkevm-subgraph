@@ -1,0 +1,21 @@
+{
+  "name": "zkevm-blocks",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ zkevm-blocks",
+    "create-local": "graph create --node http://localhost:8020/ zkevm-blocks",
+    "remove-local": "graph remove --node http://localhost:8020/ zkevm-blocks",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 zkevm-blocks",
+    "test": "graph test",
+    "create-by-auth": "graph create --node https://gn:UU27xqoCgQPa5KHm@dxwnh97pbfm4l.cloudfront.net/deploy/ dc/blocks",
+    "deploy-by-auth": "graph deploy --ipfs https://dxwnh97pbfm4l.cloudfront.net/ipfs/ --headers='{\"Authorization\": \"Basic Z246VVUyN3hxb0NnUVBhNUtIbQ==\"}' --node https://gn:UU27xqoCgQPa5KHm@dxwnh97pbfm4l.cloudfront.net/deploy/ dc/blocks",
+    "remove-by-auth": "graph remove --node https://gn:UU27xqoCgQPa5KHm@dxwnh97pbfm4l.cloudfront.net/deploy/ dc/blocks"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.77.0",
+    "@graphprotocol/graph-ts": "0.29.1"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}

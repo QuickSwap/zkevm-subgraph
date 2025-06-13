@@ -1,0 +1,21 @@
+{
+  "name": "quickswap-v3",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ quickswap-v3",
+    "create-local": "graph create --node http://localhost:8020/ quickswap-v3",
+    "remove-local": "graph remove --node http://localhost:8020/ quickswap-v3",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 quickswap-v3",
+    "test": "graph test",
+    "create-by-auth": "graph create --node https://gn:UU27xqoCgQPa5KHm@dxwnh97pbfm4l.cloudfront.net/deploy/ quickswap/v3",
+    "deploy-by-auth": "graph deploy --ipfs https://dxwnh97pbfm4l.cloudfront.net/ipfs/ --headers='{\"Authorization\": \"Basic Z246VVUyN3hxb0NnUVBhNUtIbQ==\"}' --node https://gn:UU27xqoCgQPa5KHm@dxwnh97pbfm4l.cloudfront.net/deploy/ quickswap/v3",
+    "remove-by-auth": "gra0.77.0ph remove --node https://gn:UU27xqoCgQPa5KHm@dxwnh97pbfm4l.cloudfront.net/deploy/ quickswap/v3"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "",
+    "@graphprotocol/graph-ts": "0.29.1"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}
